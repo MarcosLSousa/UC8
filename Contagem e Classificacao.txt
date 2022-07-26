@@ -1,0 +1,21 @@
+quantidade = 14; //qde de alunos na sala
+
+for(let i=0 ; i <= quantidade ; i++ ) 
+{
+	if( i % 2 == 0) //se sobra da divisão for 0
+	{
+		if( quantidade == 0) // se for 0 a qtde de alunos
+		{
+			console.log(i, "Número é zero");
+		} 
+		else 
+		{
+			console.log(i, "Número é par");
+		}
+	}
+	else //se sobra da divisão não for 0
+	{
+		console.log(i, "Número é ímpar");
+	}
+	
+}
