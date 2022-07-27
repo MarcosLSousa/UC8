@@ -1,0 +1,21 @@
+let Lista = ["Peça1", "Peça2", "Peça3", "Peça4", "Peça5", "Peça6", "Peça7", "Peça8", "Peça9"];
+let QtdeDePecas = Lista.length;
+
+if(QtdeDePecas < 10) //capacidade máx da caixa
+  {
+  Lista.push("Peça12"); //inserção de nova peça dentro da caixa
+  console.log(Lista); //mostra toda a lista de peças inseridas na caixa
+  } 
+else 
+  {
+  console.log("Capacidade Insuficiente")
+  }
+
+for(let indice = 0; indice < QtdeDePecas; indice++)//bloco para checagem do tomanho do nome da peça
+  {
+  const TamNome = Lista[indice]
+  if(TamNome.length < 3)
+    {
+    console.log("Erro: O nome da peça possui menos de 3 caracteres")
+    }
+  }
